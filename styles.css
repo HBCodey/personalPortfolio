@@ -137,43 +137,29 @@ a:visited {
 }
 
 @media only screen and (min-width: 680px), (orientation: landscape;) {
+    
     main{
         width: 100%;
         height: auto;
-        display: grid;
+        display: grid;       
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(26, 2fr);
     }
-    .projects-flex {
-        margin-top: 15px;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-       
-    }
-    .project {
-        flex-basis: 20%;
-        border: whitesmoke solid 1px;
-        background-color: rgba(36, 46, 53, 0.4);
-        border-radius: 2%;
-        color: #CCDDDD;
-        margin: 5px;
-    }
-
+           
     #banner {
-        grid-area: 1 / 1 / span 20 / span 2;
-        max-height: 600px;
+        grid-area: 1 / 1 / span 14 / span 2;
+        
     }
     .about {
-    
-        grid-area: 21 / 1 / span 3 / span 1;
+        align-self: baseline;
+        grid-area: 16 / 1 / span 3 / span 1;
         margin: 10px;
         max-width: 500px;
-        
     }
     .projects {
+        align-self: baseline;
         
-        grid-area: 21 /  2 / span 6 / 2;
+        grid-area: 16 /  2 / span 6 / 2;
         max-width: 750px;
         
     }
@@ -195,6 +181,6 @@ a:visited {
     }
     .contact {
     
-        grid-area: 24 / 1 / span 3 / span 1;
+        grid-area: 19 / 1 / span 3 / span 1;
     }
 }
